@@ -24,7 +24,7 @@ jobs:
 
       - name: Test GHCR Login
         run: |
-          echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u vannchhai123 --password-stdin
+          echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ReaksaChan --password-stdin
 
       - name: Build & Push with Jib
         run: mvn -B -X compile jib:build
